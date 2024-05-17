@@ -5,7 +5,7 @@ run-name: Reviewing ${{ github.actor }}'s code changes  🚀
 on: [push]
 env:
   LOCATION: us-central1
-  PROJECT_ID: genai-cicd
+  PROJECT_ID: qwiklabs-gcp-03-4e00336f7522  
 jobs:
   DevAI-Reviews:
     runs-on: ubuntu-latest

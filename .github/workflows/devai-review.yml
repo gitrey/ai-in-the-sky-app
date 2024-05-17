@@ -27,7 +27,6 @@ jobs:
         uses: 'google-github-actions/auth@v2'
         with:
           credentials_json: '${{ secrets.GOOGLE_API_CREDENTIALS }}' 
-          project_id: genai-cicd
       - name: Code Review
         run: echo '## Code Review Results 🚀' >> $GITHUB_STEP_SUMMARY
       - run: echo "$(devai review code -c ${{ github.workspace }})" >> $GITHUB_STEP_SUMMARY
